@@ -1,1 +1,115 @@
+/*Body*/
+body {
+  background-color: #fffaf2;
+  color: #00113f;
+  font-family: "Segoe UI", Roboto, Arial, sans-serif;
+  line-height: 1.7;
+  margin: 0;
+  padding: 0;
+}
+
+/*Sizing*/
+
+#container {
+  max-width: 1100px;
+  width: 90%;
+  margin: 0 auto;
+  padding: 24px 16px;
+}
+
+/* Heading CSS*/
+h1 {
+  color: #002a58;
+  border: 3px solid #006d77;
+  border-radius: 10px;
+  background-color: #e0f7f5;
+  text-align: center;
+  padding: 12px;
+  margin-bottom: 16px;
+}
+
+h2 {
+  color: #004b50;
+  border-bottom: 3px solid #0097a7;
+  text-align: center;
+  padding-bottom: 6px;
+  margin-top: 0;
+}
+
+h3 {
+  color: #064c4c;
+  border-left: 5px solid #0097a7;
+  padding-left: 10px;
+  margin-top: 25px;
+  background-color: #f0fafa;
+  border-radius: 6px;
+}
+
+/* Paragraph edit thing */
+.para {
+  border: 2px solid #d1e7e0;
+  border-radius: 12px;
+  padding: 12px 16px;
+  margin-bottom: 20px;
+  background-color: #ffffff;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+}
+
+.highlight { border-color: #b5d9d6; }
+.underline { border-color: #bde0d9; }
+.emphasis { border-color: #a5cfc9; background-color: #f8fdfd; }
+
+.tiny {
+  text-align: center;
+  font-size: 0.85rem;
+  color: #4a5670;
+}
+
+/* Links CSS */
+a:link    { color: #ff0000; text-decoration: underline; }
+a:visited { color: #0040ff; }
+a:hover   { color: #00ff66; text-decoration: none; }
+a:active  {color:rgb(179, 255, 0); }
+
+/*Image edit*/
+.image-frame {
+  width: 220px;
+  height: auto;
+  border-radius: 10px;
+  border: 3px solid #d4e6e6;
+  padding: 4px;
+  margin: 8px 0 8px 14px;
+  background: #fff;
+}
+
+.float-right { float: right; }
+.float-left  { float: left; margin: 8px 14px 8px 0; }
+
+.para::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/*Responsive design part*/
+@media (max-width: 1200px) {
+  #container { width: 92%; }
+}
+
+@media (max-width: 992px) {
+  #container { width: 94%; }
+  .image-frame { width: 200px; }
+}
+
+@media (max-width: 768px) {
+  .float-left, .float-right {
+    float: none;
+    display: block;
+    margin: 8px auto 12px;
+  }
+  .image-frame {
+    width: 100%;
+    max-width: 480px;
+  }
+}
 
