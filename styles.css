@@ -22,7 +22,7 @@ h1 {
   color: #002a58;
   border: 3px solid #006d77;
   border-radius: 10px;
-  background-color: #e0f7f5;
+  background-color: #9ecdc9;
   text-align: center;
   padding: 12px;
   margin-bottom: 16px;
@@ -41,7 +41,7 @@ h3 {
   border-left: 5px solid #0097a7;
   padding-left: 10px;
   margin-top: 25px;
-  background-color: #f0fafa;
+  background-color: #d1ebeb;
   border-radius: 6px;
 }
 
@@ -73,7 +73,7 @@ a:active  {color:rgb(179, 255, 0); }
 
 /*Image edit*/
 .image-frame {
-  width: 220px;
+  width: 225px;
   height: auto;
   border-radius: 10px;
   border: 3px solid #d4e6e6;
@@ -92,12 +92,44 @@ a:active  {color:rgb(179, 255, 0); }
 }
 
 /*Responsive design part*/
+
+#sidebar {
+  background-color: red;
+  width: 15%;
+  float: right;
+  border: 3px dashed orange;
+  margin: 30px;
+  line-height: 1.2em;
+}
+
+#sidebar h3{
+  padding: 10px;
+  width:95%;
+  background:none;
+  /*edit more settings*/
+}
+
 @media (max-width: 1200px) {
-  #container { width: 92%; }
+  #container { 
+    width: 92%; 
+    background-color:yellow;
+  }
 }
 
 @media (max-width: 992px) {
   #container { width: 94%; }
+  #container, p{
+    margin: 0;
+    padding: 0;
+    border: none;
+  }
+  h1, h2, h3, p, div{
+    background-color: green;
+    /*whatever else*/
+  }
+  body {
+    padding: 20px;
+  }
   .image-frame { width: 200px; }
 }
 
@@ -113,3 +145,14 @@ a:active  {color:rgb(179, 255, 0); }
   }
 }
 
+/* Edit image location*/
+#imageleft{
+  float:left;
+  width: 225px;
+  height: auto;
+  border-radius: 10px;
+  border: 3px solid #d4e6e6;
+  padding: 4px;
+  margin: 10px;
+  background: #fff;
+}
