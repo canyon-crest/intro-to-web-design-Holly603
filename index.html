@@ -7,63 +7,79 @@
   </head>
 
   <body>
-    <div id="container">
-      <header>
-        <h1>Holly Wang</h1>
-        <h2>About Me</h2>
-      </header>
+  <a class="skip-link" href="#main">Skip to content</a>
 
-      <div id="sidebar">
-        <h3>Did You Know?</h3>
-        <p class="para">I made $2000 last year selling K-pop signed photo cards!</p>
-      </div>
-
-      <div class="info">
-        <section>
-          <h3>Background</h3>
-          <p class="para highlight">
-            <img src="images/IMG_1570.JPG" alt="My dog Coconut" class="image-frame float-right"/>
-            Hi! My name is Holly Wang, and I’m a sophomore at Canyon Crest Academy.
-            I was born in China and moved to the U.S. in eighth grade. This
-            experience taught me how to adjust to new environments. It helped me
-            become more confident, independent, and open-minded. I enjoy
-            learning about both technology and psychology because they help me
-            understand how people think and how the world works. Outside of
-            school, I love spending time with my Border Collie, Coconut, and
-            relaxing with music or watching anime.
-          </p>
-        </section>
-
-        <section>
-          <h3>Interests</h3>
-          <p class="para underline">
-            <img src="images/badmintonteam.JPG" alt="CCA Badminton Team" class="image-frame float-left"/>
-            One of my biggest interests is
-            <a href="https://www.olympics.com/en/sports/badminton/" target="_blank">badminton</a>. 
-            I’m a member of
-            <a href="https://www.instagram.com/ccabadminton/?hl=en" target="_blank">my school’s badminton team</a>, where I enjoy improving my skills and competing with my teammates.
-            The sport helps me stay active and focused while also teaching me
-            teamwork and patience. Besides sports, I like designing digital
-            projects and exploring new AI tools. In my free time, I often read
-            manga or listen to K-pop to unwind.
-          </p>
-        </section>
-
-        <section>
-          <h3>Future Goals</h3>
-          <p class="para emphasis">
-            <img src="images/whartonAI.png" alt="Wharton Global Youth AI Leadership Program" class="image-frame float-right"/>
-            In the future, I hope to study something related to Cognitive
-            Science, Artificial Intelligence, or business connected to
-            technology. I find it fascinating how AI can learn from human
-            behavior and emotions to create smarter systems. I’m also curious
-            about how psychology in AI could influence business and decision
-            making in the future. During the summer, I joined the
-            <a href="https://globalyouth.wharton.upenn.edu/programs-courses/ai-leadership/" target="_blank">Wharton Global Youth AI Leadership Program</a>
-            to explore how technology and human thinking work together.
-          </p>
-        </section>
-      </div>
+  <header class="site-header">
+    <div class="header-inner">
+      <h1>Holly Wang</h1>
+      <nav aria-label="Primary">
+        <a href="#background">Background</a>
+        <a href="#interests">Interests</a>
+        <a href="#goals">Future Goals</a>
+      </nav>
     </div>
-  </body>
+    <h2>About Me</h2>
+  </header>
+
+  <div id="container" class="layout">
+    <aside id="sidebar">
+      <h3>Did You Know?</h3>
+      <p class="para stat">
+        <ul>
+        <li>I made <span class="money">$2000</span> last year selling K-pop signed photo cards!</li>
+        <li>The picture I took below shows the Stanford HAI logo inside the William Gates Computer Science Buiding! Which is co-founded by <strong>Fei-Fei Li</strong>.</li>
+        </ul>
+      </p>
+      <figure class="mini-figure">
+        <img src="images/Stanford HAI.png" alt="Wharton Global Youth AI Leadership badge" />
+        <figcaption>Stanford HAI logo inside the William Gates Computer Science Building</figcaption>
+      </figure>
+    </aside>
+
+    <main id="main" class="info">
+      <section id="background">
+        <h3>Background</h3>
+        <p class="para highlight">
+          <img src="images/IMG_1570.JPG" alt="My dog Coconut" class="image-frame float-right"/>
+          Hi! My name is Holly Wang, and I’m a sophomore at Canyon Crest Academy.
+          I was born in China and moved to the U.S. in eighth grade. This experience
+          taught me how to adjust to new environments. It helped me become more
+          confident, independent, and open-minded. I enjoy learning about both technology
+          and psychology because they help me understand how people think and how the
+          world works. Outside of school, I love spending time with my Border Collie,
+          Coconut, and relaxing with music or watching anime.
+        </p>
+      </section>
+
+      <section id="interests">
+        <h3>Interests</h3>
+        <p class="para underline">
+          <img src="images/badmintonteam.JPG" alt="CCA Badminton Team" class="image-frame float-left"/>
+          One of my biggest interests is
+          <a href="https://www.olympics.com/en/sports/badminton/" target="_blank" rel="noopener">badminton</a>.
+          I’m a member of
+          <a href="https://www.instagram.com/ccabadminton/?hl=en" target="_blank" rel="noopener">my school’s badminton team</a>,
+          where I enjoy improving my skills and competing with my teammates. The sport helps me stay active and focused
+          while also teaching me teamwork and patience. Besides sports, I like designing digital projects and exploring
+          new AI tools. In my free time, I often read manga or listen to K-pop to unwind.
+        </p>
+      </section>
+
+      <section id="goals">
+        <h3>Future Goals</h3>
+        <p class="para emphasis">
+          <img src="images/Wharton AI Leadership.png" alt="Wharton Global Youth AI Leadership Program" class="image-frame float-right"/>
+          In the future, I hope to study something related to Cognitive Science, Artificial Intelligence, or business
+          connected to technology. I find it fascinating how AI can learn from human behavior and emotions to create
+          smarter systems. I’m also curious about how psychology in AI could influence business and decision making in
+          the future. During the summer, I joined the
+          <a href="https://globalyouth.wharton.upenn.edu/programs-courses/ai-leadership/" target="_blank" rel="noopener">
+            Wharton Global Youth AI Leadership Program</a> to explore how technology and human thinking work together.
+        </p>
+      </section>
+
+      <p class="to-top"><a href="#">Back to top ↑</a></p>
+    </main>
+  </div>
+</body>
 </html>
